@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UpConstruction Bootstrap Template - Service Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+  <section id="get-started" class="get-started section-bg">
+    <div class="container">
+
+      <div class="row justify-content-between gy-5">
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+          <div class="content">
+            <h3>Start a new journey with YieldMaster</h3>
+            <p>Our intuitive interface simplifies the process, enabling you to effortlessly provide essential details and obtain customized yield forecasts aligned with your individual requirements.
+            <p> Every detail you contribute enhances our predictive models, guaranteeing tailored recommendations tailored precisely to your farming needs.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-5" data-aos="fade">
+<!--          <form action="forms/quote.php" method="post" class="php-email-form">-->
+            <form id="prediction-form">
+        <label for="District">District:</label>
+        <input type="text" id="District" name="District"><br><br>
+
+        <label for="Crop">Crop:</label>
+        <input type="text" id="Crop" name="Crop"><br><br>
+
+        <label for="Season">Season:</label>
+        <input type="text" id="Season" name="Season"><br><br>
+
+        <label for="Area">Area (hectares):</label>
+        <input type="number" id="Area" name="Area"><br><br>
+
+        <label for="Soil Type">Soil Type:</label>
+        <input type="text" id="Soil Type" name="Soil Type"><br><br>
+
+        <label for="pH Level">pH Level:</label>
+        <input type="number" id="pH Level" name="pH Level"><br><br>
+
+        <label for="Organic Matter">Organic Matter (%):</label>
+        <input type="number" id="Organic Matter" name="Organic Matter"><br><br>
+
+        <label for="Nitrogen Content">Nitrogen Content (kg/ha):</label>
+        <input type="number" id="Nitrogen Content" name="Nitrogen Content"><br><br>
+
+        <label for="Phosphorus Content">Phosphorus Content (kg/ha):</label>
+        <input type="number" id="Phosphorus Content" name="Phosphorus Content"><br><br>
+
+        <label for="Potassium Content">Potassium Content (kg/ha):</label>
+        <input type="number" id="Potassium Content" name="Potassium Content"><br><br>
+
+        <label for="Irrigation Method">Irrigation Method:</label>
+        <select id="Irrigation Method" name="Irrigation Method">
+            <option value="Drip">Drip</option>
+            <option value="Sprinkler">Sprinkler</option>
+            <option value="Canal">Canal</option>
+            <option value="Tube Well">Tube Well</option>
+        </select><br><br>
+
+        <label for="Water Availability">Water Availability (liters/hectare):</label>
+        <input type="number" id="Water Availability" name="Water Availability"><br><br>
+
+        <button type="button" onclick="predict()">Predict</button>
+    </form>
+          <h2>Predicted Yield: <span id="predicted-yield"></span></h2>
+
+
+
+
+        </div><!-- End Quote Form -->
+
+      </div>
+
+    </div>
+  </section><!-- End Get Started Section -->
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+    <script>
+        function predict() {
+            const data = {
+                "District": document.getElementById("District").value,
+                "Crop": document.getElementById("Crop").value,
+                "Season": document.getElementById("Season").value,
+                "Area (hectares)": parseFloat(document.getElementById("Area").value),
+                "Soil Type": document.getElementById("Soil Type").value,
+                "pH Level": parseFloat(document.getElementById("pH Level").value),
+                "Organic Matter (%)": parseFloat(document.getElementById("Organic Matter").value),
+                "Nitrogen Content (kg/ha)": parseFloat(document.getElementById("Nitrogen Content").value),
+                "Phosphorus Content (kg/ha)": parseFloat(document.getElementById("Phosphorus Content").value),
+                "Potassium Content (kg/ha)": parseFloat(document.getElementById("Potassium Content").value),
+                "Irrigation Method": document.getElementById("Irrigation Method").value,
+                "Water Availability (liters/hectare)": parseFloat(document.getElementById("Water Availability").value)
+            };
+
+            fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("predicted-yield").innerText = data.predicted_yield.toFixed(4);
+            });
+        }
+    </script>
+</body>
+
+</html>

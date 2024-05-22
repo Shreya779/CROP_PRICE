@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UpConstruction Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/assets/img/logo.png" alt=""> -->
+        <h1>YieldMaster<span>!</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Welcome to <span>YieldMaster</span></h2>
+            <p data-aos="fade-up">Where precision meets productivity. Our platform harnesses cutting-edge technology to deliver accurate crop yield predictions, empowering farmers with the insights needed to optimize their harvests. Join us and revolutionize your approach to crop management today.</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="services.html" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(static/assets/img/hero-carousel/crop1.jpeg)"></div>
+      <div class="carousel-item" style="background-image: url(static/assets/img/hero-carousel/crop2.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(static/assets/img/hero-carousel/crop3.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(static/assets/img/hero-carousel/crop4.png)"></div>
+    <!-- <div class="carousel-item" style="background-image: url(static/assets/img/hero-carousel/hero-carousel-5.jpg)"></div> -->
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+
+        <div class="row justify-content-between gy-5">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              <h3>Start a new journey with YieldMaster</h3>
+              <p>Our intuitive interface simplifies the process, enabling you to effortlessly provide essential details and obtain customized yield forecasts aligned with your individual requirements.
+              <p> Every detail you contribute enhances our predictive models, guaranteeing tailored recommendations tailored precisely to your farming needs.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade">
+            <form action="forms/quote.php" method="post" class="php-email-form">
+              <h3>Get accurate crop yield</h3>
+              <p>Please enter the following details.</p>
+              <div class="row gy-3">
+
+                  <div class="col-md-12">
+                      <select name="district" class="form-select" required>
+                          <option value="">Select District</option>
+                          <option value="Select All">Select All</option>
+                          <option value="Ajmer">Ajmer</option>
+                          <option value="Alwar">Alwar</option>
+                          <option value="Bhilwara">Bhilwara</option>
+                          <option value="Hanumangarh">Hanumangarh</option>
+                          <option value="Jaipur">Jaipur</option>
+                          <option value="Jodhpur">Jodhpur</option>
+                          <option value="Kota">Kota</option>
+                          <option value="Nagaur">Nagaur</option>
+                          <option value="Sri Ganganagar">Sri Ganganagar</option>
+                          <option value="Udaipur">Udaipur</option>
+                      </select>
+                  </div>
+
+                  <div class="col-md-12">
+                      <select name="crop" class="form-select" required>
+                          <option value="">Select Crop</option>
+                          <option value="Select All">Select All</option>
+                          <option value="Bajra">Bajra</option>
+                          <option value="Chilli">Chilli</option>
+                          <option value="Citrus">Citrus</option>
+                          <option value="Coriander">Coriander</option>
+                          <option value="Cotton">Cotton</option>
+                          <option value="Cumin">Cumin</option>
+                          <option value="Fennel">Fennel</option>
+                          <option value="Fenugreek">Fenugreek</option>
+                          <option value="Garlic">Garlic</option>
+                          <option value="Gram">Gram</option>
+                          <option value="Guava">Guava</option>
+                          <option value="maize">Maize</option>
+                          <option value="Mango">Mango</option>
+                          <option value="Mustard">Mustard</option>
+                          <option value="Oilseeds">Oilseeds</option>
+                          <option value="Onion">Onion</option>
+                          <option value="Opium">Opium</option>
+                          <option value="Pomegranate">Pomegranate</option>
+                          <option value="Pulses">Pulses</option>
+                          <option value="Sugarcane">Sugarcane</option>
+                          <option value="Tomato">Tomato</option>
+                          <option value="Wheat">Wheat</option>
+                      </select>
+                  </div>
+
+                  <div class="col-md-12">
+                      <select name="season" class="form-select" required>
+                          <option value="">Select Season</option>
+                          <option value="Select All">Select All</option>
+                          <option value="Kharif">Kharif</option>
+                          <option value="Rabi">Rabi</option>
+                      </select>
+                  </div>
+
+                  <div class="col-md-12">
+                      <input type="number" name="area" class="form-control" placeholder="Area (hectares)" required>
+                  </div>
+
+                  <div class="col-md-12">
+                      <input type="number" name="yield" class="form-control" placeholder="Yield (quintals)" required>
+                  </div>
+
+                  <div class="col-md-12">
+                      <select name="soil_type" class="form-select" required>
+                          <option value="">Select Soil Type</option>
+                          <option value="Select All">Select All</option>
+                          <option value="Alkaline">Alkaline</option>
+                          <option value="Black lava soil">Black lava soil</option>
+                          <option value="Chalky(Calcareous)">Chalky (Calcareous)</option>
+                          <option value="Clay">Clay</option>
+                          <option value="Loamy">Loamy</option>
+                          <option value="Nitrogeneous">Nitrogeneous</option>
+                          <option value="Saline">Saline</option>
+                          <option value="Sandy">Sandy</option>
+                      </select>
+                  </div>
+
+                  <div class="col-md-12">
+                      <input type="number" name="ph_level" class="form-control" placeholder="pH Level" required>
+                  </div>
+
+                  <div class="col-md-12">
+                      <input type="number" name="organic_matter" class="form-control" placeholder="Organic Matter (%)" required>
+                  </div>
+
+                  <div class="col-md-12">
+                      <input type="number" name="nitrogen_content" class="form-control" placeholder="Nitrogen Content (kg/ha)" required>
+                  </div>
+
+                  <div class="col-md-12">
+                      <input type="number" name="phosphorus_content" class="form-control" placeholder="Phosphorus Content (kg/ha)" required>
+                  </div>
+
+                  <div class="col-md-12">
+                      <input type="number" name="potassium_content" class="form-control" placeholder="Potassium Content (kg/ha)" required>
+                  </div>
+
+                  <div class="col-md-12">
+                      <select name="irrigation_method" class="form-select" required>
+                          <option value="">Select Irrigation Method</option>
+                          <option value="Select All">Select All</option>
+                          <option value="Canal Irrigation">Canal Irrigation</option>
+                          <option value="Drip Irrigation">Drip Irrigation</option>
+                          <option value="Sprinkler Irrigation">Sprinkler Irrigation</option>
+                          <option value="Tube Well">Tube Well</option>
+                      </select>
+                  </div>
+
+                  <div class="col-md-12">
+                      <input type="number" name="water_availability" class="form-control" placeholder="Water Availability (liters/hectare)" required>
+                  </div>
+
+
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+
+                  <button type="submit">Get Result</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Quote Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Get Started Section -->
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>We are providing the following facilities..</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Crop Yield</h3>
+              <p>Predict your crop yield.</p>
+              <a href="/yield" class="readmore stretched-link">Click Here <i class="bi bi-arrow-right"></i></a>
+
+
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>Price Forecasting</h3>
+              <p>Forecasting the market prices.</p>
+              <a href="/price" class="readmore stretched-link">Click<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h3>Storage Advice</h3>
+              <p>Guidance regarding crop storage.</p>
+              <a href="/storage" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg" style="background-image: url(static/assets/img/alt-services.jpg);" data-aos="zoom-in" data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-easel flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Dine Pad</a></h4>
+                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Tride clov</a></h4>
+                <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row  g-2 d-flex">
+
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4>Modisit</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>Praesenti</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>Explica</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4>Nostrum</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <h3>Voluptatem dignissimos provident</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="static/assets/img/features-1.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Neque exercitationem debitis</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="static/assets/img/features-2.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Voluptatibus commodi accusamu</h3>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                </ul>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="static/assets/img/features-3.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Omnis fugiat ea explicabo sunt</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="static/assets/img/features-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+
+
+  </main><!-- End #main -->
+
+
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+<script>
+        function predict() {
+            const data = {
+                "District": document.getElementById("District").value,
+                "Crop": document.getElementById("Crop").value,
+                "Season": document.getElementById("Season").value,
+                "Area (hectares)": parseFloat(document.getElementById("Area").value),
+                "Soil Type": document.getElementById("Soil Type").value,
+                "pH Level": parseFloat(document.getElementById("pH Level").value),
+                "Organic Matter (%)": parseFloat(document.getElementById("Organic Matter").value),
+                "Nitrogen Content (kg/ha)": parseFloat(document.getElementById("Nitrogen Content").value),
+                "Phosphorus Content (kg/ha)": parseFloat(document.getElementById("Phosphorus Content").value),
+                "Potassium Content (kg/ha)": parseFloat(document.getElementById("Potassium Content").value),
+                "Irrigation Method": document.getElementById("Irrigation Method").value,
+                "Water Availability (liters/hectare)": parseFloat(document.getElementById("Water Availability").value)
+            };
+
+            fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("predicted-yield").innerText = data.predicted_yield.toFixed(4);
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('static/assets/img/background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vmax;
+    height: 50vmax;
+}
+
+.prdict
+{
+    width: 90%;
+    height: 45%;
+    background-color: white;
+    border-radius: 0.7rem;
+    opacity: 0.5;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#textPredict
+{
+
+
+}
+
+#nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image:url(navbar.gif);
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 100%;
+}
+
+#nav h1{
+    color: black;
+}
+
+
+
+h1, h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+
+.lime-explanation h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Crop-Yield-and-Price-Prediction" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Crop_Yeild_and_Price_Prediction" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/EDAI" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MAM" vcs="Git" />
   </component>
